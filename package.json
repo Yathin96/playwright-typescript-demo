@@ -1,0 +1,29 @@
+{
+  "name": "playwright-typescript-demo",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript UI and API test automation framework — Page Object Model, typed fixtures, cross-browser projects, Allure reporting and CI.",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test --project=api",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "typecheck": "tsc --noEmit",
+    "trace": "playwright show-trace"
+  },
+  "keywords": ["playwright", "typescript", "test-automation", "page-object-model", "api-testing"],
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.0",
+    "allure-playwright": "^3.0.0",
+    "typescript": "^5.7.0"
+  }
+}
