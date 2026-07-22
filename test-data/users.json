@@ -1,0 +1,8 @@
+{
+  "scenarios": [
+    { "id": "standard", "username": "standard_user", "expected": "success", "note": "Baseline happy path" },
+    { "id": "locked", "username": "locked_out_user", "expected": "error", "note": "Account disabled by admin" },
+    { "id": "problem", "username": "problem_user", "expected": "success", "note": "Renders broken images — UI regression bait" },
+    { "id": "glitch", "username": "performance_glitch_user", "expected": "success", "note": "Artificially slow — exercises auto-waiting" }
+  ]
+}
